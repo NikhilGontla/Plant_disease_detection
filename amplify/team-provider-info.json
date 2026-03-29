@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-plantdisease-dev-a5c9b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::848172273763:role/amplify-plantdisease-dev-a5c9b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::848172273763:role/amplify-plantdisease-dev-a5c9b-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-plantdisease-dev-a5c9b-deployment",
+      "UnauthRoleName": "amplify-plantdisease-dev-a5c9b-unauthRole",
+      "StackName": "amplify-plantdisease-dev-a5c9b",
+      "StackId": "arn:aws:cloudformation:ap-south-1:848172273763:stack/amplify-plantdisease-dev-a5c9b/7787bff0-2b96-11f1-b417-0679eb41853b",
+      "AmplifyAppId": "d3bz7fksxwevuo"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3bz7fksxwevuo",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
