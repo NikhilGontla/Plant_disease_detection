@@ -30,7 +30,7 @@ export default function WelcomePage() {
     setStatus("Requesting secure upload URL...");
 
     try {
-      const { uploadUrl, key } = await uploadEndpoint({ filename: file.name, contentType: file.type });
+      const { uploadUrl, key, getUrl } = await uploadEndpoint({ filename: file.name, contentType: file.type });
 
       setStatus("Uploading image to S3...");
       await uploadToS3(uploadUrl, file);
@@ -41,8 +41,8 @@ export default function WelcomePage() {
         throw new Error("Image does not appear to be a leaf. Choose another image.");
       }
 
-      localStorage.setItem("plantdisease_image", JSON.stringify({ key }));
-      navigate("/prediction", { state: { key } });
+      localStorage.setItem("plantdisease_image", JSON.stringify({ key, url: getUrl }));
+      navigate("/prediction", { state: { key, url: getUrl } });
     } catch (e) {
       console.error(e);
       setError(e.message || "Failed pipeline step. Please try again.");
@@ -57,7 +57,16 @@ export default function WelcomePage() {
       <h1 className="text-3xl font-bold mb-4">Plant Disease Labeling Pipeline</h1>
       <p className="mb-4 text-slate-700">Upload a leaf image to validate and predict disease labels.</p>
       <div className="space-y-4">
-        <input type="file" accept="image/*" onChange={onFileChange} className="block" />
+        <input
+          type="file"
+          accept="image/*"
+          onChange={onFileChange}
+          className="block w-full text-sm text-slate-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded file:border-0
+            file:bg-green-50 file:text-green-700
+            hover:file:bg-green-100 cursor-pointer"
+        />
         {error && <p className="text-red-600">{error}</p>}
         {status && <p className="text-blue-600">{status}</p>}
         <button

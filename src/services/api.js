@@ -1,5 +1,5 @@
 import { API } from "aws-amplify";
-const apiName = "plantdiseaseApi";
+const apiName = "plantdiseaseapi";
 
 export const uploadEndpoint = (payload) => API.post(apiName, "/upload", { body: payload });
 export const validateEndpoint = (payload) => API.post(apiName, "/validate-image", { body: payload });

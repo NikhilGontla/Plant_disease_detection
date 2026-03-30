@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "paths": {
+    "/upload": {
+      "name": "/upload",
+      "lambdaFunction": "uploadHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/validate-image": {
+      "name": "/validate-image",
+      "lambdaFunction": "validateImageHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/predict": {
+      "name": "/predict",
+      "lambdaFunction": "predictHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/save-annotation": {
+      "name": "/save-annotation",
+      "lambdaFunction": "saveAnnotationHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
