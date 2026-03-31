@@ -1,0 +1,50 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-plantdisease-dev-3ffb5-authRole",
+      "UnauthRoleArn": "arn:aws:iam::848172273763:role/amplify-plantdisease-dev-3ffb5-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::848172273763:role/amplify-plantdisease-dev-3ffb5-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-plantdisease-dev-3ffb5-deployment",
+      "UnauthRoleName": "amplify-plantdisease-dev-3ffb5-unauthRole",
+      "StackName": "amplify-plantdisease-dev-3ffb5",
+      "StackId": "arn:aws:cloudformation:ap-south-1:848172273763:stack/amplify-plantdisease-dev-3ffb5/19494530-2ba0-11f1-9ff8-062d271ae927",
+      "AmplifyAppId": "dw1j7nx5enhim"
+    },
+    "categories": {
+      "auth": {
+        "plantdiseaseauth": {}
+      },
+      "function": {
+        "uploadHandler": {
+          "deploymentBucketName": "amplify-plantdisease-dev-3ffb5-deployment",
+          "s3Key": "amplify-builds/uploadHandler-48534d416d4962636d51-build.zip"
+        },
+        "validateImageHandler": {
+          "deploymentBucketName": "amplify-plantdisease-dev-3ffb5-deployment",
+          "s3Key": "amplify-builds/validateImageHandler-526958784649577a7154-build.zip"
+        },
+        "predictHandler": {
+          "deploymentBucketName": "amplify-plantdisease-dev-3ffb5-deployment",
+          "s3Key": "amplify-builds/predictHandler-5a5a3475745171343777-build.zip"
+        },
+        "saveAnnotationHandler": {
+          "deploymentBucketName": "amplify-plantdisease-dev-3ffb5-deployment",
+          "s3Key": "amplify-builds/saveAnnotationHandler-306c4e42587744526662-build.zip"
+        }
+      },
+      "storage": {
+        "s316c4b567": {}
+      },
+      "api": {
+        "plantdiseaseapi": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dw1j7nx5enhim",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

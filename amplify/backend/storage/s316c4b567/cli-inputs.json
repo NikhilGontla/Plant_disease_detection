@@ -1,0 +1,12 @@
+{
+  "resourceName": "s316c4b567",
+  "bucketName": "plantdiseasestoragebucket",
+  "policyUUID": "16c4b567",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
